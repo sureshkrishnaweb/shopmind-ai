@@ -1,0 +1,13 @@
+PRODUCTS = [
+ {"id":"asus-tuf-a15","name":"ASUS TUF Gaming A15","store":"Amazon","category":"laptop","price":68990,"original_price":76990,"rating":4.7,"reviews":18420,"image":"","url":"https://www.amazon.in/","specs":{"processor":"Ryzen 7","ram":"16GB","storage":"512GB SSD","gpu":"RTX 3050"},"tags":["gaming","coding","laptop","performance"]},
+ {"id":"lenovo-loq","name":"Lenovo LOQ Gaming","store":"Flipkart","category":"laptop","price":65990,"original_price":72990,"rating":4.6,"reviews":9620,"image":"","url":"https://www.flipkart.com/","specs":{"processor":"Core i5","ram":"16GB","storage":"1TB SSD","gpu":"RTX 4050"},"tags":["gaming","coding","laptop","value"]},
+ {"id":"hp-victus","name":"HP Victus Gaming","store":"Amazon","category":"laptop","price":69990,"original_price":78990,"rating":4.5,"reviews":8150,"image":"","url":"https://www.amazon.in/","specs":{"processor":"Core i7","ram":"16GB","storage":"512GB SSD","gpu":"RTX 3050"},"tags":["gaming","coding","laptop"]},
+ {"id":"nothing-3a","name":"Nothing Phone (3a)","store":"Flipkart","category":"phone","price":24999,"original_price":27999,"rating":4.5,"reviews":11430,"image":"","url":"https://www.flipkart.com/","specs":{"ram":"8GB","storage":"128GB","camera":"50MP","display":"120Hz"},"tags":["phone","camera","android","value"]},
+ {"id":"samsung-s25","name":"Samsung Galaxy S25","store":"Amazon","category":"phone","price":74999,"original_price":80999,"rating":4.6,"reviews":7430,"image":"","url":"https://www.amazon.in/","specs":{"ram":"12GB","storage":"256GB","camera":"50MP","display":"120Hz AMOLED"},"tags":["phone","camera","premium","android"]},
+ {"id":"nike-pegasus-41","name":"Nike Pegasus 41","store":"Myntra","category":"shoes","price":4995,"original_price":8295,"rating":4.6,"reviews":12890,"image":"","url":"https://www.myntra.com/","specs":{"type":"Running","gender":"Men","use":"Road running"},"tags":["running","shoes","fitness","sports"]},
+ {"id":"sony-xm5","name":"Sony WH-1000XM5","store":"Amazon","category":"headphones","price":29990,"original_price":34990,"rating":4.7,"reviews":21900,"image":"","url":"https://www.amazon.in/","specs":{"type":"Over-ear","anc":"Yes","battery":"30 hours"},"tags":["headphones","music","anc","wireless"]},
+ {"id":"airpods-pro","name":"Apple AirPods Pro","store":"Amazon","category":"earbuds","price":23990,"original_price":26990,"rating":4.6,"reviews":15300,"image":"","url":"https://www.amazon.in/","specs":{"type":"TWS","anc":"Yes","battery":"6 hours"},"tags":["earbuds","apple","anc","wireless"]}
+]
+
+def get_product(product_id):
+    return next((p for p in PRODUCTS if p["id"] == product_id), None)

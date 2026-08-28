@@ -1,0 +1,17 @@
+# Node
+node_modules/
+.next/
+.env.local
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
+
+# OS
+.DS_Store
+
+.env
+.env.*
+!.env.example
