@@ -1,4 +1,4 @@
-const API_URL=process.env.NEXT_PUBLIC_API_URL||"http://localhost:8000/api";
+const API_URL=process.env.NEXT_PUBLIC_API_URL||(process.env.NODE_ENV==="production"?"/api/backend":"http://localhost:8000/api");
 
 async function request(path,options={}){
  const r=await fetch(API_URL+path,{headers:{"Content-Type":"application/json",...(options.headers||{})},...options});
